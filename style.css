@@ -17,19 +17,26 @@ body {
 
 .container {
   display: grid;
-  padding: 10rem 15rem;
-  margin: 10rem auto;
+  padding: 4rem 15rem;
+  margin: 8rem auto;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 2rem;
   background-color: blueviolet;
   max-width: 120rem;
-  height: 60rem;
   font-size: 2.5rem;
   border-radius: 2rem;
 }
 
 h2 {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+  color: tomato;
 }
 
 .top-image {
