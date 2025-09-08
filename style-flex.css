@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eaeaea;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem auto;
+  max-width: 120rem;
+  background-color: cornflowerblue;
+  padding: 10rem 0;
+  row-gap: 5rem;
+  font-size: 2.5rem;
+  border-radius: 1rem;
+}
+
+.top,
+.bottom {
+  display: flex;
+  padding: 0 15rem;
+  column-gap: 10rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.top-image {
+  width: 30rem;
+  height: 30rem;
+  flex-shrink: 0; /* grow, shrink, basis */
+}
+
+.top-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.hobbies,
+.aspirations {
+  flex: 1; /* take equal space */
+  min-width: 0; /* prevents flex overflow issues */
+}

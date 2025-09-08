@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  padding: 10rem 15rem;
+  margin: 10rem auto;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  background-color: blueviolet;
+  max-width: 120rem;
+  height: 60rem;
+  font-size: 2.5rem;
+  border-radius: 2rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.top-image {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  grid-column: 1 / 2;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.about {
+  grid-column: 2/ 3;
+}
+
+.hobbies {
+  grid-column: 1/ 2;
+}
+
+.aspirations {
+  grid-column: 2/ 3;
+}
